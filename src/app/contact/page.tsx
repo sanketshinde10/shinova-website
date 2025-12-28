@@ -91,12 +91,12 @@ export default function ContactPage() {
             </p>
 
             <div className="space-y-8 mb-12">
-              <InfoItem icon={<Mail />} title="Email" value="hello@shinova.tech" />
-              <InfoItem icon={<Phone />} title="Phone" value="+1 (555) 123-4567" />
+              <InfoItem icon={<Mail />} title="Email" value="shinovatechnologies@gmail.com" />
+              {/* <InfoItem icon={<Phone />} title="Phone" value="+91 9665281755" /> */}
               <InfoItem
                 icon={<MapPin />}
                 title="Location"
-                value="San Francisco, CA (Remote Friendly)"
+                value="Pune,India"
               />
             </div>
 
@@ -105,10 +105,10 @@ export default function ContactPage() {
                 Follow Us
               </h3>
               <div className="flex gap-4">
-                <SocialLink href="https://linkedin.com">
+                <SocialLink href="https://www.linkedin.com/company/shinova-technologies/">
                   <Linkedin size={20} />
                 </SocialLink>
-                <SocialLink href="https://instagram.com">
+                <SocialLink href="https://www.instagram.com/shinovatechnologies">
                   <Instagram size={20} />
                 </SocialLink>
               </div>

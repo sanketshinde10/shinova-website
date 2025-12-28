@@ -90,7 +90,7 @@ export function Footer() {
 
           <div className="flex gap-4">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/shinova-technologies/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-8 h-8 rounded-full bg-white/10 hover:bg-primary text-gray-300 hover:text-white transition-colors flex items-center justify-center"
@@ -100,7 +100,7 @@ export function Footer() {
             </a>
 
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/shinovatechnologies"
               target="_blank"
               rel="noopener noreferrer"
               className="w-8 h-8 rounded-full bg-white/10 hover:bg-primary text-gray-300 hover:text-white transition-colors flex items-center justify-center"
