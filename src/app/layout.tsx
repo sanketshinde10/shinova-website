@@ -90,8 +90,7 @@ export const metadata: Metadata = {
 
     title: "Shinova Technologies",
 
-    description:
-      "Innovating a Brighter Digital World.",
+    description: "Innovating a Brighter Digital World.",
 
     images: ["/images/og-image.png"],
   },
@@ -120,6 +119,22 @@ export const metadata: Metadata = {
   },
 };
 
+/* Organization Schema */
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://shinovatechnologies.in/#organization",
+  name: "Shinova Technologies",
+  url: "https://shinovatechnologies.in",
+  logo: "https://shinovatechnologies.in/images/logo.png",
+  description:
+    "Shinova Technologies is a software development company delivering innovative Web Development, Mobile App Development, AI Solutions, Cloud Services, UI/UX Design, Digital Transformation, and IT Consulting services.",
+  sameAs: [
+    "https://www.instagram.com/shinovatechnologies",
+    "https://www.linkedin.com/company/shinova-technologies/",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -128,6 +143,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
         <Providers>
           <Header />
           <main className="flex-grow">{children}</main>
