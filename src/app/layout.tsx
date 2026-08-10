@@ -2,6 +2,7 @@ import "./globals.css";
 import "../styles/scroll.css";
 
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Providers from "./providers";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -155,6 +156,8 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
         </Providers>
+
+        <GoogleAnalytics gaId="G-CF6B6BB6K9" />
       </body>
     </html>
   );
